@@ -1,0 +1,44 @@
+Enter no. of productions : 5
+Enter productions :
+S->E
+E->a
+E->x
+E->E+E
+E->E*E
+
+Enter input : x+a*a
+
+SHIFT x
+Stack:	$x
+Input:	+a*a
+REDUCE using E->x
+Stack:	$E
+
+SHIFT +
+Stack:	$E+
+Input:	a*a
+
+SHIFT a
+Stack:	$E+a
+Input:	*a
+REDUCE using E->a
+Stack:	$E+E
+REDUCE using E->E+E
+Stack:	$E
+
+SHIFT *
+Stack:	$E*
+Input:	a
+
+SHIFT a
+Stack:	$E*a
+Input:	
+REDUCE using E->a
+Stack:	$E*E
+REDUCE using E->E*E
+Stack:	$E
+
+REDUCE using S->E
+Stack:	$S
+
+STRING ACCEPTED SUCCESSFULLY
