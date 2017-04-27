@@ -29,3 +29,10 @@ void main(){
 	}
 	getch();
 }
+
+/*output:
+S->Cd
+A->ab
+A->Cs
+B->f
+C->h*/

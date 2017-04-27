@@ -1,0 +1,11 @@
+
+LOAD		2		1
+STORE		2		1
+ADD		2		1
+DEC		2		1
+JNZ		2		1
+LOAD		2		1
+STORE		2		1
+ADD		2		1
+DEC		2		1
+JNZ		2		1
